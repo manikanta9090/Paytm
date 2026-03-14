@@ -1,20 +1,41 @@
-- Clone the repo
+# Paytm Wallet Clone
 
-```jsx
-git clone 
-```
+A modern fintech wallet application built with Next.js, Prisma and PostgreSQL.
 
-- npm install
-- Run postgres either locally or on the cloud (neon.tech)
+## Features
 
-```jsx
-docker run  -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
-```
+- Wallet balance management
+- Add money via bank
+- Send money (P2P transfers)
+- Transaction history
+- Live market dashboard (USD, EUR, BTC, NIFTY, SENSEX)
+- Modern Paytm-style UI
 
-- Copy over all .env.example files to .env
-- Update .env files everywhere with the right db url
-- Go to `packages/db`
-    - npx prisma migrate dev
-    - npx prisma db seed
-- Go to `apps/user-app` , run `npm run dev`
-- Try logging in using phone - 1111111111 , password - alice (See `seed.ts`)
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Send Money
+![Send Money](screenshots/send-money.png)
+
+### Add Money
+![Add Money](screenshots/add-money.png)
+
+### Live Markets
+![Markets](screenshots/market-widget.png)
+
+## Tech Stack
+
+- Next.js 14
+- TailwindCSS
+- Prisma ORM
+- PostgreSQL
+- NextAuth
+- React Icons
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
