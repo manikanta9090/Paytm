@@ -14,16 +14,19 @@ A modern fintech wallet application built with Next.js, Prisma and PostgreSQL.
 ## Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png.png)
 
 ### Send Money
-![Send Money](screenshots/send-money.png)
+![Send Money](screenshots/Sendmoney.png.png)
 
 ### Add Money
-![Add Money](screenshots/add-money.png)
+![Add Money](screenshots/Addmoney.png.png)
 
 ### Live Markets
-![Markets](screenshots/market-widget.png)
+![Markets](screenshots/Marketlivedata.png.png)
+
+### Transactions
+![Transactions](screenshots/Transactions.png.png)
 
 ## Tech Stack
 
