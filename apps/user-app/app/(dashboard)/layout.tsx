@@ -6,16 +6,18 @@ export default function Layout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <div className="flex">
-        <div className="w-72 border-r border-slate-300 min-h-screen mr-4 pt-28">
-            <div>
-                <SidebarItem href={"/dashboard"} icon={<HomeIcon />} title="Home" />
-                <SidebarItem href={"/transfer"} icon={<TransferIcon />} title="Transfer" />
+    <div className="flex bg-gradient-to-b from-slate-50 to-blue-50/50 min-h-screen">
+        <div className="w-80 border-r border-slate-100/50 shadow-2xl bg-white/90 backdrop-blur-xl min-h-screen pt-28 px-6 py-8 sticky left-0 top-0 h-screen overflow-auto">
+            <div className="space-y-3">
+                <SidebarItem href={"/dashboard"} icon={<HomeIcon />} title="Dashboard" />
+                <SidebarItem href={"/transfer"} icon={<TransferIcon />} title="Add Money" />
                 <SidebarItem href={"/transactions"} icon={<TransactionsIcon />} title="Transactions" />
-                <SidebarItem href={"/p2p"} icon={<P2PTransferIcon />} title="P2P Transfer" />
+                <SidebarItem href={"/p2p"} icon={<P2PTransferIcon />} title="Send Money" />
             </div>
         </div>
-            {children}
+            <div className="flex-1 overflow-auto">
+                {children}
+            </div>
     </div>
   );
 }
@@ -44,3 +46,4 @@ function P2PTransferIcon() {
     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
   </svg>
 }
+
