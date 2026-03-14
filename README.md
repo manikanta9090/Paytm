@@ -28,6 +28,21 @@ A modern fintech wallet application built with Next.js, Prisma and PostgreSQL.
 ### Transactions
 ![Transactions](screenshots/Transactions.png.png)
 
+## Project Structure
+Paytm
+│
+├── apps
+├── packages
+├── components
+├── screenshots
+│ ├── dashboard.png
+│ ├── add-money.png
+│ ├── send-money.png
+│ └── market-widget.png
+│
+├── README.md
+└── package.json
+
 ## Tech Stack
 
 - Next.js 14
